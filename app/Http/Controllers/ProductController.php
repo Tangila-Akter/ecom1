@@ -88,7 +88,7 @@ class ProductController extends Controller
     {
         $product = Product::find($id);
         $shop = Shop::all();
-        return view('admin.pages.product.edit',compact("product", "shop"));
+        return view('admin.pages.product.edit', compact("product", "shop"));
     }
 
     /**
@@ -129,7 +129,7 @@ class ProductController extends Controller
     public function destroy($id)
     {
         $product = Product::find($id);
-        
+
         if (public_path($product->logo)) {
             unlink(public_path($product->logo));
         }

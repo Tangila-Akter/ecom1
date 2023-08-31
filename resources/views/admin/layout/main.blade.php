@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+<html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg"
+    data-sidebar-image="none" data-preloader="disable">
 
 <head>
 
@@ -8,10 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
-@include('admin.layout.style')
-@yield('custom_styles')
-
+    @include('admin.layout.styles')
+    @yield('custom_styles')
 </head>
+
 <body>
 
     <!-- Begin page -->
@@ -62,7 +63,7 @@
     </div>
 
 
-    @include('admin.layout.script')
+    @include('admin.layout.scripts')
     @yield('custom_scripts')
 </body>
 
